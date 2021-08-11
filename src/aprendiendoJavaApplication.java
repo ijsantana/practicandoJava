@@ -15,7 +15,7 @@ public class aprendiendoJavaApplication {
         fwafa
         wf
         awawgawg
-        awgawg
+        awgawg3wr3rw3rw3
         */
 
         //VARIABLES PRIMITIVAS: boolean, int, string, char, double, float, long.
