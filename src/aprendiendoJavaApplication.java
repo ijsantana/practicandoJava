@@ -4,7 +4,7 @@ public class aprendiendoJavaApplication {
 
     public static void main(String[] args) {
 
-
+        //AGREGO UNA LINEA//
         //OBJETO TIPO STRING DE JAVA lo que quiera puto el que lee
         //awdawdawdawd
         /*
