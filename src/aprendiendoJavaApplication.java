@@ -21,13 +21,31 @@ public class aprendiendoJavaApplication {
         //VARIABLES PRIMITIVAS: boolean, int, string, char, double, float, long.
         //VARIABLES EN JAVA, LIBRERIAS PROPIAS DE JAVA: Boolean, Integer, String, Double, Float...
 
-        String nombre = "nacho";
+        String nombre = ""; //UN STRING ES UNA CADENA O UN VECTOR DE CHARS
+        String nombre2 = null; //_ _ _ _ _ _ _ /0 -> Finaliza la cadena o string
 
         int largo = nombre.length();
         Integer largo2 = nombre.length();
         String largoEnLetras = largo2.toString();
 
         Boolean respuesta = nombre.equals("pepe");
+
+        //VECTOR [String1, String2, String3]
+        //SIEMPRE ARRANCA EN 0 HASTA N-1
+        // ES DE TAMAÑO FIJO -> YO DEFINO EL TAMAÑO DEL MISMO
+        String[] nombres2 = new String[3];
+        String[] nombres = new String[]{"CARLOS", "PEPE", "LUIS"};
+        nombres[0] = "JUAN";
+        String[] nombres3 = nombres.clone();
+        String[] nombres4 = nombres;
+        nombres[1].toLowerCase();
+        nombres[1].concat("12312");
+
+
+        for(int i = 0; i<nombres.length; i++){
+            System.out.println(nombres[i]);
+        }
+
 
 
 //        CONDICIONALES
@@ -103,10 +121,10 @@ public class aprendiendoJavaApplication {
 
 
 
-        Auto corsa2 = new Auto();
+        Auto corsa2 = new Auto("corsa");
 
         //COPIANDO AUTO2 DE CORSA EN UN OBJETO NUEVO
-        Auto auto2 = new Auto();
+        Auto auto2 = new Auto("corsa","LSS232");
         auto2.copiarAuto(corsa);
 
         corsa.setearPatente("HAD123");
