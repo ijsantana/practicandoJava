@@ -6,22 +6,33 @@ public class practicandoVeterinaria {
 
     public static void main(String [] args){
 
-        Scanner nombreMascota = new Scanner(System.in);
+        //SCANNER NOMBRE MASCOTA
+
+        Scanner petName = new Scanner(System.in);
              System.out.println("Como se llama tu mascota");
+        String nameP = petName.nextLine();
 
-        String nombreM = nombreMascota.nextLine();  // Read user input
+        //SCANNER EDAD MASCOTA
+
+        Scanner petAge = new Scanner(System.in);
+            System.out.println("Cual es la edad de tu mascota?");
+        Integer ageP = petAge.nextInt();
 
 
+        //SCANNER NOMBRE DEL DUENO
 
+        Scanner petOwner = new Scanner(System.in);
+            System.out.println("Cual es el nombre del dueño?");
+        String ownerP = petOwner.nextLine();
 
-        veterinaria gato = new veterinaria("Sol",8,"Ian");
-        veterinaria perro = new veterinaria("Laica",6,"=Cristina");
+        //SETEO LA PRIMER MASCOTA CON EL CONSTRUCTOR
 
+        veterinaria pet1 = new veterinaria(nameP,ageP,ownerP);
 
-        gato.mostrarDatos();
-        gato.verificarEdad();
-        perro.mostrarDatos();
-        perro.verificarEdad();
+        //EJECUTO METODOS
+
+        pet1.showData();
+        pet1.verifyAge();
 
     }
 

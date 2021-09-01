@@ -4,31 +4,35 @@ public class veterinaria {
 
     // Atributos
 
-    private String mascota;
-    private String dueno;
-    private Integer edad;
+    private String nombreMascota;
+    private String nombreDueño;
+    private Integer edadMascota;
 
     //CONSTRUCTORES
 
     public veterinaria(String nombreM,Integer edadM,String nombreD) {
-        this.mascota =nombreM;
-        this.edad = edadM;
-        this.dueno = nombreD;
+        this.nombreMascota =nombreM;
+        this.nombreDueño = nombreD;
+        this.edadMascota = edadM;
+
     }
 
     //METODOS
 
-    public void mostrarDatos() {
-        System.out.println("El nombre es:" +mascota);
-        System.out.println("La edad es:" +edad);
-        System.out.println("El dueno se llama:" +dueno);
+    public void showData() {
+
+        System.out.println("El nombre de tu mascota es: " + nombreMascota.substring(0, 1).toUpperCase() + nombreMascota.substring(1));
+
+        System.out.println("La edad de tu mascota es: " + edadMascota + " años");
+
+        System.out.println("El nombre del dueño es: " + nombreDueño.substring(0, 1).toUpperCase() + nombreDueño.substring(1));
     }
 
-    public void verificarEdad() {
-        if (edad > 10) {
-            System.out.println(mascota + " es mayor de edad");
+    public void verifyAge() {
+        if (edadMascota > 10) {
+            System.out.println(nombreMascota.substring(0, 1).toUpperCase() + nombreMascota.substring(1) + " es mayor de edad");
         } else {
-            System.out.println(mascota+" es menor de edad");
+            System.out.println(nombreMascota.substring(0, 1).toUpperCase() + nombreMascota.substring(1) + " es menor de edad");
         }
     }
 
